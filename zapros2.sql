@@ -1,3 +1,5 @@
+Таблица с результатами бегуна с предыдущих соревнований. Должен отображаться пол, возраст 
+
 SELECT r."Gender", AGE(CURRENT_TIMESTAMP(2), r."DateOfBirth") AS "AGE", m."MarathonName" as "Marathon"
 from "Runner" r 
 CROSS JOIN "Marathon" m
